@@ -13,11 +13,11 @@ RiotWatcher is available via `pip install riotwatcher`.
 
 
 
-#League
+## League
 
 A key for the Riot API is required. Get one here: https://developer.riotgames.com/
 
-## Available commands
+### Available commands
 
 - `lstatus` -- Show general status information of League's services
 - `sinfo <summoner>` -- Show (as of now) rudimentary info about the summoner
