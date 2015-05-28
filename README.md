@@ -20,4 +20,4 @@ A key for the Riot API is required. Get one here: https://developer.riotgames.co
 ## Available commands
 
 - linfo
-    -Show general status information of League's services
+    - Show general status information of League's services
