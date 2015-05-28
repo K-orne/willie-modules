@@ -3,7 +3,7 @@ import datetime
 from riotwatcher.riotwatcher import RiotWatcher
 from riotwatcher.riotwatcher import EUROPE_WEST
 
-API_KEY = 'b754af07-6bb2-4745-b26d-bb0a29fd73ed'
+API_KEY = ''
 w = RiotWatcher(API_KEY, default_region=EUROPE_WEST)
 
 
