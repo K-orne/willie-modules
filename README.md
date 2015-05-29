@@ -27,7 +27,7 @@ As of now it's hardcoded to only access the API for EUW.
 ### TODO
 - Make all regions available
 - Set up a proper config section for willie
-  - API Key 
+  - ~~API Key~~ 
   - Region
 - Add proper documentation
 - ...

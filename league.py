@@ -22,10 +22,30 @@ def configure(config):
         config.interactive_add('league', 'region', "Default Region - Check riotwatcher")
 
 
+# Available regions:
+regions = {
+    BRAZIL              = 'br',
+    EUROPE_NORDIC_EAST  = 'eune',
+    EUROPE_WEST         = 'euw',
+    KOREA               = 'kr',
+    LATIN_AMERICA_NORTH = 'lan',
+    LATIN_AMERICA_SOUTH = 'las',
+    NORTH_AMERICA       = 'na',
+    OCEANIA             = 'oce',
+    RUSSIA              = 'ru',
+    TURKEY              = 'tr'
+    }
+
+
+
+@willie.module.commands('lregions')
+def lregions(bot):
+    bot.reply("Available regions are:" +
+
 @willie.module.commands('lstatus')
 def lstatus(bot, trigger):
-    w = RiotWatcher(bot.config.league.api_key, default_region=EUROPE_WEST)
-    status = w.get_server_status('euw')
+    w = RiotWatcher(bot.config.league.api_key, default_region=trigger.group(2))
+    status = w.get_server_status(trigger.group(2))
     services = status.get('services')
     result = ""
     seq = list()
